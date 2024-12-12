@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&display=swap"
+        rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center login-container">
+        <div class="page-content my-5 shadow">
+            <div class="login-content row justify-content-center align-items-center px-5">
+                <div class="col-md-5 img"><img src="./imgs/login-img.png" alt="" class="w-100"></div>
+                <div class="col-md-6 login-form pt-3">
+                    <div class="mb-3 name-input-container d-none">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control">
+                        <p class="text-danger d-none invalid-name">Invalid name, name can contain 3-15 characters, small or capital letters or numbers</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        <p class="text-danger d-none invalid-email">Invalid email, should contain @. ex: name@example.com</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-control" aria-describedby="passwordHelpBlock">
+                        <p class="text-danger d-none invalid-password">Invalid password, password should contain 8-15 characters, small or capital letters or numbers</p>
+                    </div>
+                    <button class="btn mb-3 login-btn">Login</button>
+                    <button class="btn mb-3 sign-up-btn d-none">Sign up</button>
+                    <p class="d-none text-danger invalid-login">Invalid email or password!</p>
+                    <p class="d-none text-danger invalid-signup">Email already exists! Please login or try another email</p>
+                    <p class="login-paragraph">Don't have an account? <span class="login-link">Sign up</span></p>
+                    <p class="sign-up-paragraph d-none">Already have an account? <span class="sign-up-link">Login</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-content d-none">
+        <nav class="navbar navbar-expand-lg shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link logout" href="#">log out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="welcome-container vh-100 d-flex justify-content-center align-items-center">
+            <h1 class="welcome"></h1>
+        </div>
+    </div>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

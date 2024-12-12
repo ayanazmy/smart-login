@@ -1,0 +1,29 @@
+:root {
+    --color-theme: #374479;
+}
+
+.login-container.container {
+    min-height: 100vh;
+    button {
+        background-color: var(--color-theme);
+        color: white;
+        &:hover {
+            background-color: #4b5c9e;
+            color: #fff;
+        }
+    }
+
+    a {
+        color: var(--color-theme);
+    }
+
+    .login-link, .sign-up-link {
+        text-decoration: underline;
+        color: var(--color-theme);
+        cursor: pointer;
+    }
+    .decoration-none {
+        text-decoration: none;
+        color: inherit;
+    }
+}
